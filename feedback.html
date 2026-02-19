@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/feedback.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Wonder Park</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="themepark.html">Theme Park</a></li>
+                <li><a href="waterpark.html">Water Park</a></li>
+                <li><a href="tickets & offers.html">Tickets & Offers</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="feedback-form">
+            <h2>We Value Your Feedback</h2>
+            <form action="feedback.php" method="POST"> 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="rating">Rating (1 to 5):</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Good</option>
+                    <option value="3">3 - Average</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="1">1 - Very Poor</option>
+                </select>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your experience..."></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Wonder Park</h3>
+                <p>Wonder Park is the ultimate destination for thrill-seekers, families, and adventure lovers. We offer a variety of exciting rides and experiences for all ages.</p>
+            </div>
+            <div class="footer-section links">
+
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@wonderpark.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wonder Park. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

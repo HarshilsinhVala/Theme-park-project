@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wonder Park</title>
+    <link rel="stylesheet" href="css/contact_us.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Wonder Park</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="themepark.html">Theme Park</a></li>
+                <li><a href="waterpark.html">Water Park</a></li>
+                <li><a href="tickets & offers.html">Tickets & Offers</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <p>We are here to help. Please reach out to us using the information below or submit your inquiry through the form.</p>
+
+            <div class="contact-details">
+                <p><strong>Wonder Park Office</strong></p>
+                <p>Wonder Park Management Team</p>
+                <p>123 Adventure Avenue, Fun City, FP 45678</p>
+                <p><strong>Email:</strong> support@wonderpark.com</p>
+                <p><strong>Phone:</strong> +1-234-567-8900</p>
+                <p><strong>Office Hours:</strong> Monday to Friday, 9:00 AM to 9:00 PM (Closed on public holidays)</p>
+            </div>
+
+            <form action="contact_us.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Wonder Park</h3>
+                <p>Wonder Park is the ultimate destination for thrill-seekers, families, and adventure lovers. We offer a variety of exciting rides and experiences for all ages.</p>
+            </div>
+            <div class="footer-section links">
+
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@wonderpark.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wonder Park. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

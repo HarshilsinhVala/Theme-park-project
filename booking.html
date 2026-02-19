@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Booking Form</title>
+    <link rel="stylesheet" type="text/css" href="css/booking.css">
+</head>
+<body>
+
+    <h2>Park Booking Form</h2>
+    
+    <form id="booking-form" action="booking.php" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="mobile">Mobile No:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="visit-date">Visit Date:</label>
+        <input type="date" id="visit-date" name="visit-date" required>
+
+        <label for="park">Select Park:</label>
+        <select id="park" name="park" required>
+            <option value="Theme Park">Theme Park</option>
+            <option value="Water Park">Water Park</option>
+        </select>
+
+        <div class="radio-group">
+            <label>Choose an Option:</label>
+            <label><input type="radio" name="option" value="Happy Tuesday at Wonder-Park Theme Park- @999/-" required>Happy Tuesday at Wonder-Park Theme Park- @999/-</label>
+            <label><input type="radio" name="option" value="Flexi Visit Ticket- @1119/-">Flexi Visit Ticket- @1119/-</label>
+            <label><input type="radio" name="option" value="Wat-a-Wednesday at Imagicaa Water Park- @699/-">Wat-a-Wednesday at Imagicaa Water Park- @699/-</label>
+            <label><input type="radio" name="option" value="College Student Ticket- @999/-">College Student Ticket- @999/-</label>
+        </div>
+
+        <button type="submit" id="book-now-btn">Book Now</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('booking-form');
+
+        form.addEventListener('submit', (e) => {
+            if (!form.checkValidity()) {
+                e.preventDefault(); 
+                alert("Please fill out all required fields."); 
+            } else {
+                console.log('Form submitted'); 
+            }
+        });
+    </script>
+
+</body>
+</html>

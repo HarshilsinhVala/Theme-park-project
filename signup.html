@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/signup.css">
+ 
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <h1>Wonder Park</h1>
+    </div>
+</header>
+  
+  <div class="container">
+    <form class="signup-form" action="signup.php" method="POST">
+      <h2>Sign Up</h2>
+
+      <label for="fname">Username</label>
+      <input type="text" id="fname" name="fname" placeholder="Enter Username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" maxlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number, one uppercase and one lowercase letter, and at least 8 characters" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" placeholder="Enter City" required>
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter Phone" required maxlength="10" pattern="([0-9]{10,})" onkeypress="return /[0-9]/i.test(event.key)">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
